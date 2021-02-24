@@ -20,6 +20,7 @@ namespace CommandAPI
              /*********/
              services.AddControllers();
 
+            //Applying Dependency Injection
              services.AddScoped<ICommandAPIRepo, MockCommandAPIRepo>();
 
         }
