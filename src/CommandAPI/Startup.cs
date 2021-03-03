@@ -32,7 +32,8 @@ namespace CommandAPI
             services.AddControllers();
 
             //Applying Dependency Injection
-             services.AddScoped<ICommandAPIRepo, MockCommandAPIRepo>();
+           //  services.AddScoped<ICommandAPIRepo, MockCommandAPIRepo>();
+             services.AddScoped<ICommandAPIRepo, SqlCommandAPIRepo>();
 
         }
 
